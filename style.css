@@ -1,0 +1,30 @@
+body{
+  background-image: url(forest.jpg);
+}
+
+.banner{
+  text-align: center;
+}
+
+
+svg path{
+  fill: transparent;
+  stroke: black;
+  stroke-width: 0.1;
+  stroke-dasharray:60;
+  stroke-dashoffset: 60;
+  animation: textAnimation 4s ease-in-out forwards;
+}
+
+@keyframes textAnimation{
+  0% {
+    stroke-dashoffset: 60;
+  }
+  80% {
+    fill: transparent;
+  }
+  100% {
+    fill: #5c0489;
+    stroke-dashoffset: 0;
+  }
+}
